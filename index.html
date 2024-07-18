@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="sketch.js" defer></script>
+    <title>Etch-A-Sketch</title>
+  </head>
+  <body>
+    <div class="hero"><h1>Etch-A-Sketch</h1></div>
+
+    <div id="content">
+      <div class="btn-row">
+        <div class="marker">
+          <img class="markImg" src="images/marker.png" alt="" />
+          <input type="color" id="color-picker" />
+        </div>
+        <button class="btn" id="rainbow">
+          <img src="images/rainbow.png" id="rainbowImg" alt="" />
+        </button>
+        <button class="eraser btn">
+          <img src="images/eraser.png" id="eraserImg" alt="" />
+        </button>
+        <button class="newGrid btn">Change Grid Size</button>
+        <button class="reset btn">Reset Grid</button>
+      </div>
+
+      <div id="container"></div>
+    </div>
+  </body>
+</html>
